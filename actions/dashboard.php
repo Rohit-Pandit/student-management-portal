@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once "database/db.php"; // Include database connection
+require_once "../database/db.php"; // Include database connection
 
 if (!isset($_SESSION["user_id"])) {
     header("Location: login.html");
@@ -25,7 +25,7 @@ $result = $stmt->get_result();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
     <div class="container">
@@ -43,6 +43,16 @@ $result = $stmt->get_result();
             }
             ?>
         </ul>
+
+        <br>
+        <a href="enroll.php">Enroll in Subjects</a>
+        <br>
+        <a href="upload_assignment.php">Upload Assignment</a> 
+        <br> 
+        <a href="view_assignments.php">View Submitted Assignments</a>
+
+        <br>
+
         <a href="logout.php">Logout</a>
     </div>
 </body>

@@ -81,10 +81,13 @@ folders(public,includes,databse,actions,views) files(index.php,style.css)
   
         Now, let's manually enroll a student (for testing):
 
-                INSERT INTO enrollments (user_id, subject_id) VALUES
+       INSERT INTO enrollments (user_id, subject_id) VALUES
         (1, 1),  -- User 1 is enrolled in Mathematics
         (1, 2),  -- User 1 is enrolled in Science
         (2, 3);  -- User 2 is enrolled in History
+
+14. creating enroll.php file
+15.         
 
  
 

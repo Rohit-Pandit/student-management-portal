@@ -1,5 +1,5 @@
 <?php
-require_once "database/db.php"; // Include the database connection
+require_once "../database/db.php"; // Include the database connection
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST["name"];
